@@ -45,3 +45,8 @@ function stringTransformer(str) {
       return("Even and Odd are the same")
     }
     }
+
+    ///remove vowels from a string
+    function disemvowel(str) {
+        return str.replace(/[aeiou]/gi,'');
+      }
