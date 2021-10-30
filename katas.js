@@ -50,3 +50,12 @@ function stringTransformer(str) {
     function disemvowel(str) {
         return str.replace(/[aeiou]/gi,'');
       }
+
+    ///finds highest/lowest numbers
+    function highAndLow(numbers){
+        const num = numbers.split(" ");
+        console.log(num);
+        const max = Math.max(...num);
+        const min = Math.min(...num);
+        return `${max} ${min}`;
+      }
