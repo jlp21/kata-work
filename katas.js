@@ -59,3 +59,23 @@ function stringTransformer(str) {
         const min = Math.min(...num);
         return `${max} ${min}`;
       }
+
+      ///Find letters matching alphabet position
+      function solve(arr){  
+
+        const solution = arr.map((wordOg) => {
+          let count=0;
+          const word = wordOg.toLowerCase();
+          for(let i=0; i<word.length; i++) {
+            const characterIterating = word[i];
+            console.log(characterIterating)
+            const positionOf = word.charCodeAt(i) - 97;
+            console.log(positionOf)
+            if(positionOf === i) {
+              count++;
+            }
+          }
+          return count;
+        })
+        return solution;
+        };
