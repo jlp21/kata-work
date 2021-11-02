@@ -79,3 +79,15 @@ function stringTransformer(str) {
         })
         return solution;
         };
+
+        ///Higher order function Filter example
+
+        function isRubyComing(list) {
+            // thank you for checking out my kata :)
+            const ruby = list.filter(dev => (dev.language === 'Ruby'));
+            if(ruby.length >= 1){
+              return true;
+            } else {
+              return false;
+            }
+          };
