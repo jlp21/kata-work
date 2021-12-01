@@ -91,3 +91,25 @@ function stringTransformer(str) {
               return false;
             }
           };
+
+          function maxPizza(cuts, count=2) {
+            if (cuts < 0) {
+                return -1
+              } switch (cuts) {
+                case 0:
+                return 1;
+                case 1:
+                  return 2;
+                case 2:
+                  return 4;
+                default:
+                  return getCuts(cuts)
+              }
+              function getCuts(cuts) {
+                let count = 4
+                while(cuts > 2) {
+                  count += cuts;
+                  cuts--
+                } return count;
+              }
+            }
