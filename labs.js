@@ -125,3 +125,14 @@ function Timestamp(props) {
 }
 
 export default Timestamp;
+
+function Message(props) {
+    
+  return (
+  
+  <p className="message"> {props.message} </p>
+
+  );
+}
+
+export default Message;
